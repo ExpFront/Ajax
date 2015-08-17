@@ -17,7 +17,7 @@
       $.ajax({
         url: "text.html",
         context: document.body
-      }).done(function() {
+      }).done('text.html', function() {
         $( this ).addClass( "done" );
       });
     });
