@@ -16,9 +16,9 @@
     $('.button--left').click(function() {
       $.ajax({
         url: "text.html",
-        context: document.body
-      }).done('./text.html', function() {
-        $( this ).addClass( "done" );
+        success: function(data) {
+          $('.addings').html(data);
+        }
       });
     });
   });
