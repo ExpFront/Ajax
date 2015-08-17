@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>Learning Ajax</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <section>
     <button class="button--left">Tap me</button>
     <div class="addings">Some text</div>
   </section>
+<script src="scripts/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.button--left').click(function() {
+      $('.addings').load('text.html');
+    });g
+  });
+</script>
 </body>
 </html>
