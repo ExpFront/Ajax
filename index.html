@@ -14,7 +14,12 @@
 <script>
   $(document).ready(function() {
     $('.button--left').click(function() {
-      $('.addings').load('text.html');
+      $.ajax({
+        url: "text.html",
+        context: document.body
+      }).done(function() {
+        $( this ).addClass( "done" );
+      });
     });
   });
 </script>
